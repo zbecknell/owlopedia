@@ -6,7 +6,7 @@ function DarkModeToggle() {
   return (
     <button
       onClick={toggleDarkMode}
-      className="relative p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-all duration-300 hover:bg-gray-300 dark:hover:bg-gray-600 transform hover:scale-110"
+      className="relative p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-all duration-300 hover:bg-gray-300 dark:hover:bg-gray-600 transform hover:scale-110 cursor-pointer"
       aria-label="Toggle dark mode"
     >
       <div className="relative w-6 h-6">
