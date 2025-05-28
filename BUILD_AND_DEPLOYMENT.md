@@ -56,8 +56,8 @@ git --version
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd AgileTraining/owls-website
+git clone https://github.com/zbecknell/owlopedia.git
+cd owlopedia/owls-website
 ```
 
 ### 2. Install Dependencies
@@ -160,7 +160,7 @@ owls-website/
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/username/owls-website.git
+   git remote add origin https://github.com/zbecknell/owlopedia.git
    git push -u origin main
    ```
 
@@ -173,7 +173,7 @@ owls-website/
 
    export default defineConfig({
      plugins: [react()],
-     base: '/owls-website/', // Replace with your repository name
+     base: '/owlopedia/', // Repository name
      build: {
        outDir: 'dist',
        assetsDir: 'assets'
@@ -337,7 +337,7 @@ jobs:
 3. **Verify Deployment**
    - Push changes to trigger the workflow
    - Check the "Actions" tab for build status
-   - Visit your site at: `https://username.github.io/repository-name/`
+   - Visit your site at: `https://zbecknell.github.io/owlopedia/`
 
 ## Environment Configuration
 
@@ -367,7 +367,7 @@ export default defineConfig(({ command, mode }) => {
   
   return {
     plugins: [react()],
-    base: isProduction ? '/owls-website/' : '/',
+    base: isProduction ? '/owlopedia/' : '/',
     build: {
       outDir: 'dist',
       sourcemap: !isProduction,

@@ -4,7 +4,7 @@ A comprehensive educational website dedicated to owls, featuring information abo
 
 ## 🦉 Live Demo
 
-Visit the live website: [Owlopedia on GitHub Pages](https://username.github.io/AgileTraining/)
+Visit the live website: [Owlopedia on GitHub Pages](https://zbecknell.github.io/owlopedia/)
 
 ## 🚀 Quick Start
 

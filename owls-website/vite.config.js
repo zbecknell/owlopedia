@@ -12,8 +12,8 @@ export default defineConfig(({ command, mode }) => {
       tailwindcss(),
     ],
     // Configure base path for GitHub Pages
-    // Change 'AgileTraining' to your actual repository name
-    base: isProduction ? '/AgileTraining/' : '/',
+    // Repository name: owlopedia
+    base: isProduction ? '/owlopedia/' : '/',
     build: {
       outDir: 'dist',
       assetsDir: 'assets',
