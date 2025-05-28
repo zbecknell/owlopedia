@@ -31,7 +31,7 @@ function Home() {
           
           <div className="w-full max-w-lg h-72 bg-gradient-to-br from-amber-100 to-amber-200 border-4 border-gray-700 rounded-2xl flex items-center justify-center mb-6 shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
             <img 
-              src="/hero.png" 
+              src="hero.png" 
               alt="Beautiful owl with striking orange eyes and detailed feather patterns" 
               className="w-full h-full object-cover rounded-xl"
             />
