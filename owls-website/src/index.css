@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply font-sans bg-gradient-to-br from-amber-50 to-orange-50 text-gray-900;
+  }
+  
+  h1, h2, h3 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .topic-circle {
+    @apply w-24 h-24 rounded-full border-4 border-gray-700 flex items-center justify-center bg-gradient-to-br from-amber-100 to-amber-200 hover:from-amber-200 hover:to-amber-300 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+  
+  .hero-section {
+    @apply relative bg-gradient-to-br from-amber-100 via-orange-100 to-yellow-100 min-h-96;
+  }
+  
+  .sidebar-section {
+    @apply bg-gradient-to-br from-green-300 via-green-400 to-emerald-400 shadow-lg;
+  }
+  
+  .content-card {
+    @apply bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200 shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+}
+
+@layer utilities {
+  /* Floating animations for decorative dots */
+  .animate-float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+  }
+  
+  .animate-float-medium {
+    animation: float-medium 6s ease-in-out infinite;
+  }
+  
+  .animate-float-fast {
+    animation: float-fast 4s ease-in-out infinite;
+  }
+  
+  .animate-float-gentle {
+    animation: float-gentle 7s ease-in-out infinite;
+  }
+  
+  .animate-float-drift {
+    animation: float-drift 9s ease-in-out infinite;
+  }
+  
+  .animate-float-sway {
+    animation: float-sway 5s ease-in-out infinite;
+  }
+  
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.6; }
+    25% { transform: translateY(-15px) translateX(8px) scale(1.1); opacity: 0.8; }
+    50% { transform: translateY(-20px) translateX(0px) scale(0.9); opacity: 1; }
+    75% { transform: translateY(-10px) translateX(-8px) scale(1.05); opacity: 0.7; }
+  }
+  
+  @keyframes float-medium {
+    0%, 100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.7; }
+    33% { transform: translateY(-18px) translateX(-12px) scale(1.15); opacity: 0.9; }
+    66% { transform: translateY(-8px) translateX(12px) scale(0.85); opacity: 0.5; }
+  }
+  
+  @keyframes float-fast {
+    0%, 100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.8; }
+    25% { transform: translateY(-12px) translateX(6px) scale(1.2); opacity: 0.6; }
+    50% { transform: translateY(-16px) translateX(0px) scale(0.9); opacity: 1; }
+    75% { transform: translateY(-8px) translateX(-6px) scale(1.1); opacity: 0.7; }
+  }
+  
+  @keyframes float-gentle {
+    0%, 100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.6; }
+    25% { transform: translateY(-12px) translateX(-6px) scale(1.08); opacity: 0.8; }
+    50% { transform: translateY(-18px) translateX(4px) scale(0.95); opacity: 0.9; }
+    75% { transform: translateY(-8px) translateX(8px) scale(1.12); opacity: 0.7; }
+  }
+  
+  @keyframes float-drift {
+    0%, 100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.6; }
+    20% { transform: translateY(-10px) translateX(15px) scale(1.1); opacity: 0.8; }
+    40% { transform: translateY(-22px) translateX(8px) scale(0.9); opacity: 1; }
+    60% { transform: translateY(-16px) translateX(-12px) scale(1.15); opacity: 0.7; }
+    80% { transform: translateY(-6px) translateX(-4px) scale(0.95); opacity: 0.9; }
+  }
+  
+  @keyframes float-sway {
+    0%, 100% { transform: translateY(0px) translateX(0px) scale(1); opacity: 0.6; }
+    25% { transform: translateY(-14px) translateX(10px) scale(1.2); opacity: 0.9; }
+    50% { transform: translateY(-18px) translateX(0px) scale(0.8); opacity: 0.5; }
+    75% { transform: translateY(-14px) translateX(-10px) scale(1.1); opacity: 0.8; }
+  }
+}
