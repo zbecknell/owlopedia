@@ -393,7 +393,20 @@ rm -rf node_modules/.vite
 
 #### 2. Routing Issues on GitHub Pages
 - Ensure `base` is correctly set in `vite.config.js`
-- For client-side routing, you may need a `404.html` that redirects to `index.html`
+- Ensure `basename` prop is set in BrowserRouter component
+- For client-side routing, the `404.html` file redirects to `index.html`
+- The `index.html` includes a script to handle redirected URLs
+
+**Client-Side Routing Setup:**
+```javascript
+// In App.jsx
+const basename = import.meta.env.PROD ? '/owlopedia' : ''
+<Router basename={basename}>
+```
+
+**Files for GitHub Pages Routing:**
+- `public/404.html` - Handles direct URL access to routes
+- `index.html` - Processes redirected URLs from 404.html
 
 #### 3. Asset Loading Issues
 - Check that all asset paths are relative

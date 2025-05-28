@@ -8,8 +8,11 @@ import Diet from './pages/Diet'
 import './App.css'
 
 function App() {
+  // Get the base path for GitHub Pages deployment
+  const basename = import.meta.env.PROD ? '/owlopedia' : ''
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
