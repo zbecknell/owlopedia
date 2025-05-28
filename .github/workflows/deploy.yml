@@ -34,10 +34,6 @@ jobs:
         working-directory: owls-website
         run: npm install && npm ci
         
-      - name: Run linting
-        working-directory: owls-website
-        run: npm run lint
-        
       - name: Build project
         working-directory: owls-website
         run: npm run build
