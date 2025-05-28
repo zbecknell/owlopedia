@@ -1,0 +1,470 @@
+{
+  "owls": [
+    {
+      "id": "great-horned-owl",
+      "commonName": "Great Horned Owl",
+      "scientificName": "Bubo virginianus",
+      "description": "One of North America's most recognizable owls, known for its distinctive ear tufts and powerful talons. These adaptable predators are found across diverse habitats from forests to deserts.",
+      "images": {
+        "hero": {
+          "filename": "hero.png",
+          "caption": "Majestic Great Horned Owl showcasing distinctive ear tufts",
+          "alt": "Close-up portrait of a Great Horned Owl with prominent ear tufts and piercing yellow eyes"
+        },
+        "portrait": {
+          "filename": "portrait.jpg",
+          "caption": "Detailed view of facial features and plumage patterns",
+          "alt": "Detailed portrait showing the intricate feather patterns and facial disc"
+        },
+        "habitat": {
+          "filename": "habitat.jpg", 
+          "caption": "Great Horned Owl in its natural woodland environment",
+          "alt": "Great Horned Owl perched on a tree branch in a forest setting"
+        },
+        "hunting": {
+          "filename": "hunting.jpg",
+          "caption": "Silent flight - the perfect nocturnal predator in action",
+          "alt": "Great Horned Owl in flight with wings spread, demonstrating silent flight capabilities"
+        },
+        "family": {
+          "filename": "family.jpg",
+          "caption": "Parent with owlets in their nest",
+          "alt": "Adult Great Horned Owl with young owlets in a tree cavity nest"
+        },
+        "closeup": {
+          "filename": "closeup.jpg",
+          "caption": "Intense gaze of a master hunter",
+          "alt": "Extreme close-up of Great Horned Owl's face focusing on the striking yellow eyes"
+        }
+      },
+      "physicalCharacteristics": {
+        "height": {
+          "min": 18,
+          "max": 25,
+          "unit": "inches"
+        },
+        "wingspan": {
+          "min": 40,
+          "max": 57,
+          "unit": "inches"
+        },
+        "weight": {
+          "min": 2.0,
+          "max": 5.5,
+          "unit": "pounds"
+        },
+        "lifespan": {
+          "wild": "5-12 years",
+          "captivity": "20-25 years"
+        },
+        "distinctiveFeatures": [
+          "Prominent ear tufts",
+          "Large yellow eyes",
+          "Mottled brown and gray plumage",
+          "White throat patch",
+          "Powerful talons"
+        ],
+        "sexualDimorphism": "Females are typically larger than males"
+      },
+      "habitat": {
+        "geographicRange": "Throughout the Americas, from Alaska to South America",
+        "preferredEnvironments": [
+          "Deciduous and mixed forests",
+          "Swamps and wetlands",
+          "Parks and wooded suburban areas",
+          "Desert areas with scattered trees",
+          "Agricultural areas"
+        ],
+        "nestingLocations": [
+          "Old hawk or crow nests",
+          "Tree cavities",
+          "Cliff ledges",
+          "Abandoned buildings"
+        ],
+        "territorySize": "1-5 square miles",
+        "altitudeRange": "Sea level to 8,000 feet"
+      },
+      "behavior": {
+        "activityPattern": "Nocturnal and crepuscular",
+        "peakHuntingTimes": ["Dusk", "Dawn", "Night"],
+        "socialBehavior": "Solitary except during breeding season",
+        "territorialBehavior": "Highly territorial, will defend against other owls",
+        "vocalizations": [
+          {
+            "type": "Hoot",
+            "description": "Deep, resonant 'hoo-hoo-hoooo, hoo-hoo'",
+            "purpose": "Territory marking and mate attraction"
+          },
+          {
+            "type": "Screech",
+            "description": "Harsh screeching call",
+            "purpose": "Alarm or distress call"
+          }
+        ],
+        "flightPattern": "Silent flight with slow, powerful wingbeats",
+        "huntingMethods": ["Perch and pounce", "Low flight hunting"],
+        "breedingBehavior": {
+          "matingSystem": "Monogamous",
+          "breedingSeason": "January to May",
+          "nestingPeriod": "6-8 weeks",
+          "eggCount": "1-4 eggs",
+          "incubationPeriod": "30-35 days",
+          "fledgingPeriod": "45-55 days"
+        }
+      },
+      "diet": {
+        "dietType": "Strictly carnivorous",
+        "primaryPrey": [
+          "Rabbits and hares",
+          "Skunks",
+          "Rats and mice",
+          "Birds (including other owls)",
+          "Fish and amphibians"
+        ],
+        "preySize": "From insects to animals 3x their body weight",
+        "huntingTechniques": [
+          "Silent approach flight",
+          "Exceptional hearing for prey location",
+          "Powerful talon strike"
+        ],
+        "feedingHabits": {
+          "consumptionMethod": "Swallow small prey whole, tear larger prey",
+          "dailyConsumption": "20-30% of body weight",
+          "regurgitation": "Produce pellets of indigestible material"
+        }
+      },
+      "conservation": {
+        "status": "Least Concern",
+        "populationTrend": "Stable",
+        "threats": [
+          "Habitat loss",
+          "Vehicle collisions",
+          "Pesticide poisoning",
+          "Human disturbance"
+        ],
+        "protectionStatus": "Protected under Migratory Bird Treaty Act"
+      },
+      "facts": [
+        "Can rotate head 270 degrees",
+        "Have asymmetrical ear openings for precise sound location",
+        "Silent flight due to specialized feather structure",
+        "One of the most widespread owl species in the Americas",
+        "Can exert 300 pounds of pressure per square inch with talons",
+        "Eyes are fixed in their sockets - cannot move them like humans"
+      ]
+    },
+    {
+      "id": "barn-owl",
+      "commonName": "Barn Owl",
+      "scientificName": "Tyto alba",
+      "description": "A pale, long-legged owl with a distinctive heart-shaped facial disc. Known for their ghostly appearance and exceptional hunting abilities in complete darkness.",
+      "images": {
+        "hero": {
+          "filename": "hero.jpg",
+          "caption": "The ghostly beauty of a Barn Owl in flight",
+          "alt": "Barn Owl in flight showing its distinctive heart-shaped facial disc and pale plumage"
+        },
+        "portrait": {
+          "filename": "portrait.jpg",
+          "caption": "Heart-shaped facial disc that acts like a sound collector",
+          "alt": "Close-up portrait highlighting the Barn Owl's distinctive heart-shaped facial disc"
+        },
+        "habitat": {
+          "filename": "habitat.jpg",
+          "caption": "At home in agricultural landscapes and old barns",
+          "alt": "Barn Owl perched in a rustic barn doorway surrounded by hay bales"
+        },
+        "nocturnal": {
+          "filename": "nocturnal.jpg",
+          "caption": "Master of silent night hunting",
+          "alt": "Barn Owl hunting at night with wings spread in complete darkness"
+        },
+        "nest": {
+          "filename": "nest.jpg",
+          "caption": "Barn Owl family in their cozy nesting box",
+          "alt": "Adult Barn Owl with several fluffy white owlets in a wooden nest box"
+        },
+        "perched": {
+          "filename": "perched.jpg",
+          "caption": "Elegant pose showcasing long legs and pale plumage",
+          "alt": "Barn Owl perched on a fence post in an open field at dusk"
+        }
+      },
+      "physicalCharacteristics": {
+        "height": {
+          "min": 12,
+          "max": 16,
+          "unit": "inches"
+        },
+        "wingspan": {
+          "min": 39,
+          "max": 49,
+          "unit": "inches"
+        },
+        "weight": {
+          "min": 0.9,
+          "max": 1.4,
+          "unit": "pounds"
+        },
+        "lifespan": {
+          "wild": "2-4 years",
+          "captivity": "15-20 years"
+        },
+        "distinctiveFeatures": [
+          "Heart-shaped facial disc",
+          "Pale, ghostly appearance",
+          "Long legs",
+          "Dark eyes",
+          "Silent flight"
+        ],
+        "sexualDimorphism": "Females are larger and more spotted than males"
+      },
+      "habitat": {
+        "geographicRange": "Found on all continents except Antarctica",
+        "preferredEnvironments": [
+          "Open grasslands and prairies",
+          "Agricultural areas",
+          "Woodland edges",
+          "Suburban areas"
+        ],
+        "nestingLocations": [
+          "Barns and abandoned buildings",
+          "Church towers",
+          "Tree cavities",
+          "Cliff faces",
+          "Nest boxes"
+        ],
+        "territorySize": "0.5-2 square miles",
+        "altitudeRange": "Sea level to 4,000 feet"
+      },
+      "behavior": {
+        "activityPattern": "Nocturnal",
+        "peakHuntingTimes": ["Night"],
+        "socialBehavior": "Solitary hunters, pairs during breeding",
+        "territorialBehavior": "Less territorial than other owl species",
+        "vocalizations": [
+          {
+            "type": "Screech",
+            "description": "Harsh, raspy screech",
+            "purpose": "Primary call for communication"
+          },
+          {
+            "type": "Hiss",
+            "description": "Defensive hissing sound",
+            "purpose": "Threat display"
+          }
+        ],
+        "flightPattern": "Buoyant, moth-like flight",
+        "huntingMethods": ["Low quartering flight", "Hovering"],
+        "breedingBehavior": {
+          "matingSystem": "Monogamous",
+          "breedingSeason": "March to August",
+          "nestingPeriod": "8-10 weeks",
+          "eggCount": "3-11 eggs",
+          "incubationPeriod": "29-34 days",
+          "fledgingPeriod": "50-60 days"
+        }
+      },
+      "diet": {
+        "dietType": "Strictly carnivorous",
+        "primaryPrey": [
+          "Voles and mice",
+          "Shrews",
+          "Small rats",
+          "Small birds",
+          "Insects"
+        ],
+        "preySize": "Primarily small mammals under 100g",
+        "huntingTechniques": [
+          "Exceptional hearing for hunting in darkness",
+          "Silent flight approach",
+          "Precise strike with talons"
+        ],
+        "feedingHabits": {
+          "consumptionMethod": "Swallow prey whole",
+          "dailyConsumption": "25-30% of body weight",
+          "regurgitation": "2-3 pellets per day"
+        }
+      },
+      "conservation": {
+        "status": "Least Concern globally, but declining in some regions",
+        "populationTrend": "Declining in North America and Europe",
+        "threats": [
+          "Loss of grassland habitat",
+          "Intensive agriculture",
+          "Loss of nesting sites",
+          "Vehicle collisions",
+          "Rodenticide poisoning"
+        ],
+        "protectionStatus": "Protected in most countries"
+      },
+      "facts": [
+        "Can hunt in complete darkness using hearing alone",
+        "Facial disc acts like a satellite dish to collect sound",
+        "One of the most widespread bird species in the world",
+        "Can produce up to 11 offspring in a single brood",
+        "Helps farmers by controlling rodent populations",
+        "Flying is nearly silent due to specialized wing feathers"
+      ]
+    },
+    {
+      "id": "snowy-owl",
+      "commonName": "Snowy Owl",
+      "scientificName": "Bubo scandiacus",
+      "description": "A large, white owl of the Arctic tundra. Unlike most owls, they are active during the day and migrate south in winter, making them a spectacular sight in northern regions.",
+      "images": {
+        "hero": {
+          "filename": "hero.jpg",
+          "caption": "Arctic majesty - a Snowy Owl in its winter territory",
+          "alt": "Magnificent Snowy Owl with pure white plumage against a snowy landscape"
+        },
+        "portrait": {
+          "filename": "portrait.jpg",
+          "caption": "Piercing yellow eyes of the Arctic hunter",
+          "alt": "Close-up portrait of a Snowy Owl showing bright yellow eyes and white plumage"
+        },
+        "habitat": {
+          "filename": "habitat.jpg",
+          "caption": "At home on the vast Arctic tundra",
+          "alt": "Snowy Owl perched on tundra ground with Arctic landscape in background"
+        },
+        "flight": {
+          "filename": "flight.jpg",
+          "caption": "Powerful flight over snowy terrain",
+          "alt": "Snowy Owl in flight with wings fully extended over snow-covered ground"
+        },
+        "perched": {
+          "filename": "perched.jpg",
+          "caption": "Alert and watchful on a winter perch",
+          "alt": "Snowy Owl perched on a wooden post in a snowy field, looking alert"
+        },
+        "juvenile": {
+          "filename": "juvenile.jpg",
+          "caption": "Young Snowy Owl with characteristic dark markings",
+          "alt": "Juvenile Snowy Owl showing the darker barred markings typical of young birds"
+        }
+      },
+      "physicalCharacteristics": {
+        "height": {
+          "min": 20,
+          "max": 28,
+          "unit": "inches"
+        },
+        "wingspan": {
+          "min": 49,
+          "max": 59,
+          "unit": "inches"
+        },
+        "weight": {
+          "min": 3.5,
+          "max": 6.5,
+          "unit": "pounds"
+        },
+        "lifespan": {
+          "wild": "9-10 years",
+          "captivity": "20-28 years"
+        },
+        "distinctiveFeatures": [
+          "Predominantly white plumage",
+          "Yellow eyes",
+          "Feathered feet and legs",
+          "Large, rounded head",
+          "Dense plumage for insulation"
+        ],
+        "sexualDimorphism": "Females are larger and more heavily barred than males"
+      },
+      "habitat": {
+        "geographicRange": "Arctic regions of North America and Eurasia",
+        "preferredEnvironments": [
+          "Arctic tundra",
+          "Open prairies (winter)",
+          "Agricultural fields (winter)",
+          "Shorelines and beaches (winter)"
+        ],
+        "nestingLocations": [
+          "Ground scrapes on tundra",
+          "Elevated areas with good visibility",
+          "Areas with sparse vegetation"
+        ],
+        "territorySize": "Variable based on prey availability",
+        "altitudeRange": "Sea level to 1,000 feet"
+      },
+      "behavior": {
+        "activityPattern": "Diurnal (active during day)",
+        "peakHuntingTimes": ["Day", "Dawn", "Dusk"],
+        "socialBehavior": "Solitary except during breeding",
+        "territorialBehavior": "Territorial during breeding season",
+        "vocalizations": [
+          {
+            "type": "Hoot",
+            "description": "Deep, booming hoot",
+            "purpose": "Male territorial call"
+          },
+          {
+            "type": "Bark",
+            "description": "Harsh barking call",
+            "purpose": "Alarm call"
+          }
+        ],
+        "flightPattern": "Strong, direct flight with deep wingbeats",
+        "huntingMethods": ["Perch and wait", "Ground pursuit"],
+        "breedingBehavior": {
+          "matingSystem": "Monogamous",
+          "breedingSeason": "May to September",
+          "nestingPeriod": "7-9 weeks",
+          "eggCount": "3-11 eggs",
+          "incubationPeriod": "32-34 days",
+          "fledgingPeriod": "50-60 days"
+        },
+        "migration": "Irruptive migrant - moves south when prey is scarce"
+      },
+      "diet": {
+        "dietType": "Strictly carnivorous",
+        "primaryPrey": [
+          "Lemmings",
+          "Arctic foxes",
+          "Rabbits and hares",
+          "Ptarmigan",
+          "Waterfowl"
+        ],
+        "preySize": "From small rodents to medium-sized mammals",
+        "huntingTechniques": [
+          "Patient waiting from perch",
+          "Ground stalking",
+          "Opportunistic hunting"
+        ],
+        "feedingHabits": {
+          "consumptionMethod": "Tear larger prey, swallow smaller prey whole",
+          "dailyConsumption": "3-5 lemmings per day (when available)",
+          "regurgitation": "Large pellets containing bones and fur"
+        }
+      },
+      "conservation": {
+        "status": "Vulnerable",
+        "populationTrend": "Declining",
+        "threats": [
+          "Climate change affecting Arctic habitat",
+          "Collision with vehicles and structures",
+          "Disturbance at nest sites",
+          "Changes in prey populations"
+        ],
+        "protectionStatus": "Protected under various international agreements"
+      },
+      "facts": [
+        "One of the few owls active during daylight hours",
+        "Can survive temperatures as low as -40°F (-40°C)",
+        "Migration patterns vary dramatically based on food availability",
+        "Males are often pure white, females have more dark markings",
+        "Can detect prey under 2 feet of snow",
+        "Breeding success tied directly to lemming population cycles"
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2024-01-15",
+    "totalSpecies": 3,
+    "dataSource": "Compiled from various ornithological sources",
+    "imageCredits": "Various wildlife photographers and nature organizations"
+  }
+} 

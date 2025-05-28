@@ -5,6 +5,8 @@ import Habitat from './pages/Habitat'
 import Behavior from './pages/Behavior'
 import Anatomy from './pages/Anatomy'
 import Diet from './pages/Diet'
+import Gallery from './pages/Gallery'
+import ImageViewer from './pages/ImageViewer'
 
 function App() {
   // Get the base path for GitHub Pages deployment
@@ -19,6 +21,8 @@ function App() {
           <Route path="/behavior" element={<Behavior />} />
           <Route path="/anatomy" element={<Anatomy />} />
           <Route path="/diet" element={<Diet />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery/:owlId/:imageType" element={<ImageViewer />} />
         </Routes>
       </Layout>
     </Router>

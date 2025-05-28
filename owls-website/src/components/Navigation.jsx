@@ -72,6 +72,16 @@ function Navigation() {
             >
               Diet
             </Link>
+            <Link 
+              to="/gallery" 
+              className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
+                isActive('/gallery') 
+                  ? 'bg-gradient-to-r from-amber-500 to-orange-500 dark:from-blue-500 dark:to-indigo-500 text-white shadow-lg' 
+                  : 'text-gray-300 dark:text-gray-200 hover:text-white hover:bg-gray-700 dark:hover:bg-gray-600'
+              }`}
+            >
+              Gallery
+            </Link>
             
             {/* Dark Mode Toggle */}
             <DarkModeToggle />
