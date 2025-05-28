@@ -37,23 +37,26 @@ npm run preview
 ```
 src/
 ├── components/
-│   ├── Layout.jsx      # Main layout wrapper
-│   └── Navigation.jsx  # Site navigation
+│   ├── Layout.jsx          # Main layout wrapper
+│   ├── Navigation.jsx      # Site navigation
+│   └── DarkModeToggle.jsx  # Dark mode toggle component
+├── hooks/
+│   └── useDarkMode.js      # Dark mode state management
 ├── pages/
-│   ├── Home.jsx        # Homepage
-│   ├── Habitat.jsx     # Habitat information
-│   ├── Behavior.jsx    # Behavior patterns
-│   ├── Anatomy.jsx     # Anatomy & biology
-│   └── Diet.jsx        # Diet information
-├── App.jsx             # Main app with routing
-└── main.jsx            # Entry point
+│   ├── Home.jsx            # Homepage
+│   ├── Habitat.jsx         # Habitat information
+│   ├── Behavior.jsx        # Behavior patterns
+│   ├── Anatomy.jsx         # Anatomy & biology
+│   └── Diet.jsx            # Diet information
+├── App.jsx                 # Main app with routing
+└── main.jsx                # Entry point
 ```
 
 ## 🛠️ Technology Stack
 
 - **React 18** - UI framework
 - **Vite** - Build tool and dev server
-- **Tailwind CSS** - Styling framework
+- **Tailwind CSS** - Styling framework with dark mode support
 - **React Router** - Client-side routing
 
 ## 📖 Features
@@ -61,9 +64,31 @@ src/
 - ✅ Responsive design for all devices
 - ✅ Five comprehensive information pages
 - ✅ Modern, accessible UI
+- ✅ **Dark mode with system preference detection**
+- ✅ **Persistent theme selection via localStorage**
 - ✅ Fast loading with optimized builds
 - ✅ External resource links
 - ✅ Consistent design system
+
+## 🌙 Dark Mode
+
+The website features a comprehensive dark mode implementation:
+
+### Features
+- **Toggle Button**: Sun/moon icon in the navigation bar
+- **System Detection**: Automatically detects user's system preference
+- **Persistence**: Remembers your choice using localStorage
+- **Smooth Transitions**: Animated transitions between light and dark themes
+
+### Theme Colors
+- **Light Mode**: Warm amber and orange gradients
+- **Dark Mode**: Cool midnight blue and indigo gradients
+
+### Implementation
+The dark mode uses Tailwind CSS's built-in dark mode support with the `class` strategy. The theme state is managed by a custom React hook (`useDarkMode`) that handles:
+- Initial theme detection (localStorage → system preference → light)
+- Theme toggling and persistence
+- DOM class management for Tailwind's dark mode
 
 ## 🚀 Deployment
 

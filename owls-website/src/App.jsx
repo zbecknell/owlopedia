@@ -5,7 +5,6 @@ import Habitat from './pages/Habitat'
 import Behavior from './pages/Behavior'
 import Anatomy from './pages/Anatomy'
 import Diet from './pages/Diet'
-import './App.css'
 
 function App() {
   // Get the base path for GitHub Pages deployment

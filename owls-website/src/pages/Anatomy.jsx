@@ -1,17 +1,17 @@
 function Anatomy() {
   return (
-    <div className="bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen py-12">
+    <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 min-h-screen py-12">
       <div className="container mx-auto px-8">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
             Owl Anatomy & Biology
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 dark:text-gray-200 max-w-3xl mx-auto leading-relaxed">
             Explore the remarkable anatomy and biological adaptations that make owls such extraordinary predators
           </p>
           <div className="flex justify-center mt-6">
-            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-400 dark:from-blue-400 dark:to-indigo-400 rounded-full"></div>
           </div>
         </div>
 
@@ -19,10 +19,10 @@ function Anatomy() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">🔬</span>
-            <h2 className="text-3xl font-bold text-gray-800">Overall Anatomy & Biology</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Overall Anatomy & Biology</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+            <div className="space-y-4 text-gray-700 dark:text-gray-200 leading-relaxed">
               <p>
                 Owls possess a unique combination of anatomical features that have evolved specifically for nocturnal hunting. 
                 Their bodies are perfectly designed for silent flight, precise hearing, and exceptional vision in low-light conditions.
@@ -50,7 +50,7 @@ function Anatomy() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">📏</span>
-            <h2 className="text-3xl font-bold text-gray-800">Size & Physical Dimensions</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Size & Physical Dimensions</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center p-6 bg-gradient-to-br from-green-100 to-green-200 rounded-xl shadow-lg">
@@ -89,11 +89,11 @@ function Anatomy() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">⏰</span>
-            <h2 className="text-3xl font-bold text-gray-800">Lifespan & Life Cycle</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Lifespan & Life Cycle</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Average Lifespan</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Average Lifespan</h3>
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-amber-100 to-amber-200 p-4 rounded-lg">
                   <h4 className="font-semibold text-amber-800 mb-2">In the Wild</h4>
@@ -106,7 +106,7 @@ function Anatomy() {
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Life Stages</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Life Stages</h3>
               <div className="space-y-3">
                 <div className="flex items-center p-3 bg-pink-100 rounded-lg">
                   <span className="text-2xl mr-3">🥚</span>
@@ -145,10 +145,10 @@ function Anatomy() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">🫁</span>
-            <h2 className="text-3xl font-bold text-gray-800">How Owls Breathe</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">How Owls Breathe</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+            <div className="space-y-4 text-gray-700 dark:text-gray-200 leading-relaxed">
               <p>
                 Owls have a highly efficient respiratory system similar to other birds, featuring a unique 
                 one-way airflow system that maximizes oxygen extraction during both inhalation and exhalation.
@@ -162,7 +162,7 @@ function Anatomy() {
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Breathing Process</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Breathing Process</h3>
               <div className="space-y-3">
                 <div className="flex items-start p-3 bg-blue-50 rounded-lg border-l-4 border-blue-400">
                   <span className="text-blue-600 font-bold mr-3">1.</span>
@@ -201,7 +201,7 @@ function Anatomy() {
         <div className="content-card p-8 rounded-2xl">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">✨</span>
-            <h2 className="text-3xl font-bold text-gray-800">Unique Physical Characteristics</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Unique Physical Characteristics</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-6 bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl shadow-lg">

@@ -1,17 +1,17 @@
 function Diet() {
   return (
-    <div className="bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen py-12">
+    <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 min-h-screen py-12">
       <div className="container mx-auto px-8">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
             Diet Information
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-700 dark:text-gray-200 max-w-3xl mx-auto leading-relaxed">
             Discover the dietary habits and feeding patterns of these remarkable nocturnal hunters
           </p>
           <div className="flex justify-center mt-6">
-            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-400 dark:from-blue-400 dark:to-indigo-400 rounded-full"></div>
           </div>
         </div>
 
@@ -19,10 +19,10 @@ function Diet() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">🍽️</span>
-            <h2 className="text-3xl font-bold text-gray-800">Overall Dietary Habits</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Overall Dietary Habits</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+            <div className="space-y-4 text-gray-700 dark:text-gray-200 leading-relaxed">
               <p>
                 Owls are strictly carnivorous predators with highly specialized hunting techniques and dietary preferences. 
                 Their diet varies significantly based on species, habitat, and seasonal availability of prey.
@@ -50,7 +50,7 @@ function Diet() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">🦎</span>
-            <h2 className="text-3xl font-bold text-gray-800">What Owls Eat</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">What Owls Eat</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center p-6 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl shadow-lg">
@@ -107,7 +107,7 @@ function Diet() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">⏱️</span>
-            <h2 className="text-3xl font-bold text-gray-800">How Often Owls Eat</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">How Often Owls Eat</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl shadow-lg">
@@ -149,11 +149,11 @@ function Diet() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">🎯</span>
-            <h2 className="text-3xl font-bold text-gray-800">Hunting & Feeding Behavior</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Hunting & Feeding Behavior</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Hunting Techniques</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Hunting Techniques</h3>
               <div className="space-y-3">
                 <div className="bg-gradient-to-r from-blue-100 to-blue-200 p-4 rounded-lg border-l-4 border-blue-400">
                   <h4 className="font-semibold text-blue-800 mb-2">Perch and Pounce</h4>
@@ -170,7 +170,7 @@ function Diet() {
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Feeding Process</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Feeding Process</h3>
               <div className="space-y-3">
                 <div className="flex items-start p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
                   <span className="text-yellow-600 font-bold mr-3">1.</span>
@@ -202,7 +202,7 @@ function Diet() {
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">🦉</span>
-            <h2 className="text-3xl font-bold text-gray-800">Species-Specific Dietary Preferences</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Species-Specific Dietary Preferences</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-4 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg shadow-md">
@@ -236,11 +236,11 @@ function Diet() {
         <div className="content-card p-8 rounded-2xl">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">🔗</span>
-            <h2 className="text-3xl font-bold text-gray-800">External Resources for More Detail</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">External Resources for More Detail</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Scientific Resources</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Scientific Resources</h3>
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-100 to-blue-200 p-4 rounded-lg hover:shadow-lg transition-shadow">
                   <h4 className="font-semibold text-blue-800 mb-2">
@@ -269,7 +269,7 @@ function Diet() {
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Research & Conservation</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Research & Conservation</h3>
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-orange-100 to-orange-200 p-4 rounded-lg hover:shadow-lg transition-shadow">
                   <h4 className="font-semibold text-orange-800 mb-2">
@@ -299,7 +299,7 @@ function Diet() {
             </div>
           </div>
           <div className="mt-6 p-4 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg">
-            <p className="text-gray-700 text-sm text-center">
+            <p className="text-gray-700 dark:text-gray-200 text-sm text-center">
               <strong>Note:</strong> These external links provide additional scientific detail on individual food items, 
               seasonal dietary variations, and regional prey preferences for specific owl species.
             </p>
