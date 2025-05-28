@@ -87,7 +87,7 @@ function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-amber-200 to-orange-200 dark:from-blue-600 dark:to-indigo-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <span className="relative z-10 text-2xl">🌙</span>
             </div>
-            <span className="text-lg font-semibold text-gray-800 dark:text-gray-200 group-hover:text-amber-600 dark:group-hover:text-blue-400 transition-colors">Hunting</span>
+            <span className="text-lg font-semibold text-gray-800 dark:text-gray-200 group-hover:text-amber-600 dark:group-hover:text-blue-400 transition-colors">Diet</span>
           </Link>
           <Link to="/gallery" className="text-center group">
             <div className="topic-circle mx-auto mb-4 relative">

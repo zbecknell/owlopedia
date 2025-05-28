@@ -5,10 +5,10 @@ function Habitat() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
-            Owl Habitats
+            Where Do Owls Live?
           </h1>
           <p className="text-xl text-gray-700 dark:text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Explore the diverse places where owls make their homes around the world
+            Let's explore all the different places where owls make their homes around the world!
           </p>
           <div className="flex justify-center mt-6">
             <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-400 dark:from-blue-400 dark:to-indigo-400 rounded-full"></div>
@@ -21,28 +21,29 @@ function Habitat() {
           <div className="content-card p-8 rounded-2xl">
             <div className="flex items-center mb-6">
               <span className="text-4xl mr-4">🌲</span>
-              <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Natural Environments</h2>
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Natural Places Owls Like</h2>
             </div>
             <div className="space-y-4 text-gray-700 dark:text-gray-200 leading-relaxed">
               <p>
-                Owls are remarkably adaptable birds that choose their homes based on the availability of food, shelter, and nesting sites.
+                Owls are very good at finding homes in many different places! They pick spots where they can find food, 
+                stay safe, and build nests for their babies.
               </p>
               <ul className="space-y-3 ml-4">
                 <li className="flex items-start">
                   <span className="text-amber-500 dark:text-blue-400 mr-2 mt-1">•</span>
-                  <span><strong>Dense forests</strong> provide abundant prey and tree cavities for nesting</span>
+                  <span><strong>Thick forests</strong> give owls lots of animals to hunt and holes in trees for homes</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-amber-500 dark:text-blue-400 mr-2 mt-1">•</span>
-                  <span><strong>Open grasslands</strong> offer excellent hunting grounds for small mammals</span>
+                  <span><strong>Open grasslands</strong> are great hunting spots for mice and other small animals</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-amber-500 dark:text-blue-400 mr-2 mt-1">•</span>
-                  <span><strong>Wetlands and marshes</strong> support species that hunt fish and amphibians</span>
+                  <span><strong>Wetlands and swamps</strong> help owls that like to catch fish and frogs</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-amber-500 dark:text-blue-400 mr-2 mt-1">•</span>
-                  <span><strong>Desert regions</strong> host specialized species adapted to arid conditions</span>
+                  <span><strong>Hot desert areas</strong> are home to special owls that like dry places</span>
                 </li>
               </ul>
             </div>
@@ -52,11 +53,12 @@ function Habitat() {
           <div className="content-card p-8 rounded-2xl">
             <div className="flex items-center mb-6">
               <span className="text-4xl mr-4">🌍</span>
-              <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Global Distribution</h2>
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Owls Around the World</h2>
             </div>
             <div className="space-y-4 text-gray-700 dark:text-gray-200 leading-relaxed">
               <p>
-                Owls inhabit every continent except Antarctica, demonstrating their remarkable ability to adapt to different climates and environments.
+                Owls live almost everywhere on Earth! They can be found on every continent except Antarctica. 
+                Different types of owls live in different parts of the world.
               </p>
               <div className="grid grid-cols-1 gap-3">
                 <div className="bg-amber-100 dark:bg-gray-700 p-4 rounded-lg border-l-4 border-amber-400 dark:border-blue-400">
@@ -79,32 +81,32 @@ function Habitat() {
         {/* Nesting Locations */}
         <div className="content-card p-8 rounded-2xl mb-12">
           <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Nesting Locations</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Different owl species prefer different types of nesting sites</p>
+            <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Where Owls Build Their Homes</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">Different owls like to build their nests in different places</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center p-6 bg-gradient-to-br from-green-100 to-green-200 dark:from-gray-700 dark:to-gray-600 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <span className="text-5xl mb-4 block">🌳</span>
-              <h3 className="text-xl font-bold text-green-800 dark:text-green-300 mb-3">Tree Cavities</h3>
+              <h3 className="text-xl font-bold text-green-800 dark:text-green-300 mb-3">Tree Holes</h3>
               <p className="text-green-700 dark:text-green-200 text-sm leading-relaxed">
-                Many owls nest in hollow trees, abandoned woodpecker holes, or build stick nests in tree branches.
+                Many owls make their homes in hollow trees or old woodpecker holes. Some build stick nests in tree branches.
               </p>
             </div>
             
             <div className="text-center p-6 bg-gradient-to-br from-amber-100 to-amber-200 dark:from-gray-700 dark:to-gray-600 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <span className="text-5xl mb-4 block">🏔️</span>
-              <h3 className="text-xl font-bold text-amber-800 dark:text-amber-300 mb-3">Ground Nests</h3>
+              <h3 className="text-xl font-bold text-amber-800 dark:text-amber-300 mb-3">On the Ground</h3>
               <p className="text-amber-700 dark:text-amber-200 text-sm leading-relaxed">
-                Burrowing owls dig underground tunnels, while some species create simple ground scrapes in grasslands.
+                Burrowing owls dig holes underground like rabbits. Some owls make simple nests on the ground in tall grass.
               </p>
             </div>
             
             <div className="text-center p-6 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-gray-700 dark:to-gray-600 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
               <span className="text-5xl mb-4 block">🏠</span>
-              <h3 className="text-xl font-bold text-blue-800 dark:text-blue-300 mb-3">Human Structures</h3>
+              <h3 className="text-xl font-bold text-blue-800 dark:text-blue-300 mb-3">Near People</h3>
               <p className="text-blue-700 dark:text-blue-200 text-sm leading-relaxed">
-                Barn owls often nest in barns, church towers, and abandoned buildings, adapting well to urban environments.
+                Barn owls love to live in old barns, church towers, and empty buildings. They like living close to people!
               </p>
             </div>
           </div>
@@ -114,22 +116,22 @@ function Habitat() {
         <div className="content-card p-8 rounded-2xl">
           <div className="flex items-center mb-6">
             <span className="text-4xl mr-4">💡</span>
-            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Habitat Facts</h2>
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Cool Facts About Owl Homes</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <span className="text-2xl">🦉</span>
                 <div>
-                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">Territory Size</h4>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Owl territories range from just a few acres for small species to over 1,000 acres for large species like Great Horned Owls.</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">How Big is Their Home Area?</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Small owls need just a few acres, but big owls like Great Horned Owls need huge areas - sometimes bigger than 1,000 football fields!</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <span className="text-2xl">🌙</span>
                 <div>
-                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">Light Preferences</h4>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Owls prefer habitats with minimal light pollution, allowing them to hunt effectively using their exceptional night vision.</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">They Like Dark Places</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Owls don't like bright lights from cities. They need dark places so they can hunt with their super night vision.</p>
                 </div>
               </div>
             </div>
@@ -137,15 +139,15 @@ function Habitat() {
               <div className="flex items-start space-x-3">
                 <span className="text-2xl">🏔️</span>
                 <div>
-                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">Altitude Range</h4>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Some owl species live at elevations up to 14,000 feet, while others thrive at sea level in coastal regions.</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">High and Low Places</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Some owls live way up high in mountains, while others live near the ocean. They can live almost anywhere!</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <span className="text-2xl">🌡️</span>
                 <div>
-                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">Climate Adaptation</h4>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Snowy owls migrate from Arctic regions to temperate areas, while tropical species remain in warm climates year-round.</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-200">Hot and Cold Places</h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Snowy owls come from very cold places near the North Pole. Other owls live in hot places all year long.</p>
                 </div>
               </div>
             </div>
