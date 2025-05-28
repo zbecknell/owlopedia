@@ -21,7 +21,7 @@ function Gallery() {
   if (error) {
     return (
       <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 min-h-screen flex items-center justify-center">
-        <div className="text-center">
+        <div className="text-center px-4">
           <p className="text-red-600 dark:text-red-400 mb-4">Error loading gallery: {error}</p>
           <button 
             onClick={() => window.location.reload()} 
@@ -78,21 +78,21 @@ function Gallery() {
   return (
     <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-gray-900 dark:via-blue-900 dark:to-indigo-900 min-h-screen">
       {/* Header */}
-      <div className="content-card mx-8 mt-8 p-8 rounded-2xl">
-        <h1 className="text-4xl font-bold text-center mb-4 text-gray-800 dark:text-gray-100 bg-gradient-to-r from-amber-600 to-orange-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+      <div className="content-card mx-4 sm:mx-6 lg:mx-8 mt-6 sm:mt-8 p-6 sm:p-8 rounded-2xl">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-3 sm:mb-4 text-gray-800 dark:text-gray-100 bg-gradient-to-r from-amber-600 to-orange-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
           Owl Image Gallery
         </h1>
-        <p className="text-center text-gray-700 dark:text-gray-200 text-lg max-w-3xl mx-auto">
+        <p className="text-center text-gray-700 dark:text-gray-200 text-base sm:text-lg max-w-3xl mx-auto px-4">
           Explore stunning photographs of owls in their natural habitats. Each image tells a story of these magnificent nocturnal hunters.
         </p>
       </div>
 
       {/* Filter Buttons */}
-      <div className="mx-8 my-6">
-        <div className="flex flex-wrap justify-center gap-3">
+      <div className="mx-4 sm:mx-6 lg:mx-8 my-4 sm:my-6">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
           <button
             onClick={() => setSelectedOwl('all')}
-            className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+            className={`px-3 sm:px-4 lg:px-6 py-2 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
               selectedOwl === 'all'
                 ? 'bg-amber-600 dark:bg-blue-600 text-white shadow-lg transform scale-105'
                 : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-amber-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
@@ -106,13 +106,15 @@ function Gallery() {
               <button
                 key={owl.id}
                 onClick={() => setSelectedOwl(owl.id)}
-                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                className={`px-3 sm:px-4 lg:px-6 py-2 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
                   selectedOwl === owl.id
                     ? 'bg-amber-600 dark:bg-blue-600 text-white shadow-lg transform scale-105'
                     : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-amber-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
                 }`}
               >
-                {owl.commonName} ({imageCount})
+                <span className="hidden sm:inline">{owl.commonName}</span>
+                <span className="sm:hidden">{owl.commonName.split(' ')[0]}</span>
+                <span className="ml-1">({imageCount})</span>
               </button>
             )
           })}
@@ -120,8 +122,8 @@ function Gallery() {
       </div>
 
       {/* Image Grid */}
-      <div className="mx-8 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="mx-4 sm:mx-6 lg:mx-8 pb-6 sm:pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {filteredImages.map((image) => (
             <Link
               key={image.id}
@@ -129,7 +131,7 @@ function Gallery() {
               className="group block"
             >
               <div className="content-card rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105">
-                <div className="relative h-64 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 overflow-hidden">
+                <div className="relative h-48 sm:h-56 lg:h-64 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600 overflow-hidden">
                   {!imageError[image.id] ? (
                     <img
                       src={getImageUrl(image.owl, image.filename)}
@@ -140,10 +142,10 @@ function Gallery() {
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-gray-500 dark:text-gray-400">
-                      <div className="text-center">
-                        <div className="text-6xl mb-4">🦉</div>
-                        <p className="text-sm">Image not available</p>
-                        <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
+                      <div className="text-center px-4">
+                        <div className="text-4xl sm:text-5xl lg:text-6xl mb-2 sm:mb-4">🦉</div>
+                        <p className="text-xs sm:text-sm">Image not available</p>
+                        <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 break-all">
                           {image.filename}
                         </p>
                       </div>
@@ -155,22 +157,22 @@ function Gallery() {
                   
                   {/* View Details Button */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 px-4 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                      <span className="text-sm font-medium text-gray-800 dark:text-gray-200">View Details</span>
+                    <div className="bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 px-3 sm:px-4 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      <span className="text-xs sm:text-sm font-medium text-gray-800 dark:text-gray-200">View Details</span>
                     </div>
                   </div>
                 </div>
                 
-                <div className="p-4">
+                <div className="p-3 sm:p-4">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-semibold text-gray-800 dark:text-gray-100 group-hover:text-amber-600 dark:group-hover:text-blue-400 transition-colors">
+                    <h3 className="font-semibold text-sm sm:text-base text-gray-800 dark:text-gray-100 group-hover:text-amber-600 dark:group-hover:text-blue-400 transition-colors truncate">
                       {image.owl.commonName}
                     </h3>
-                    <span className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+                    <span className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wide ml-2 flex-shrink-0">
                       {image.type}
                     </span>
                   </div>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2">
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 line-clamp-2">
                     {image.caption}
                   </p>
                 </div>
@@ -180,26 +182,24 @@ function Gallery() {
         </div>
 
         {filteredImages.length === 0 && (
-          <div className="text-center py-12">
-            <div className="text-6xl mb-4">🦉</div>
-            <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-200 mb-2">No images found</h3>
-            <p className="text-gray-500 dark:text-gray-400">Try selecting a different filter or check back later.</p>
+          <div className="text-center py-8 sm:py-12 px-4">
+            <div className="text-4xl sm:text-5xl lg:text-6xl mb-4">🦉</div>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-700 dark:text-gray-200 mb-2">No images found</h3>
+            <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base">Try selecting a different filter or check back later.</p>
           </div>
         )}
       </div>
 
       {/* User Submission Section */}
-      <div className="mx-8 pb-16">
-        <div className="content-card p-8 rounded-2xl border-2 border-dashed border-amber-300 dark:border-blue-400">
+      <div className="mx-4 sm:mx-6 lg:mx-8 pb-12 sm:pb-16">
+        <div className="content-card p-6 sm:p-8 rounded-2xl border-2 border-dashed border-amber-300 dark:border-blue-400">
           <div className="text-center">
-            <div className="text-5xl mb-4">📸</div>
-            <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+            <div className="text-4xl sm:text-5xl mb-4">📸</div>
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4">
               Share Your Owl Photos!
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Have you captured amazing owl photos? We'd love to feature them in our gallery! 
-              Share your owl photography with the Owlopedia community.
-            </p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 sm:mb-6 max-w-2xl mx-auto text-sm sm:text-base px-4">
+              Have you captured amazing owl photos? We'd love to feature them in our gallery!</p>
             <button className="bg-gradient-to-r from-amber-500 to-orange-500 dark:from-blue-500 dark:to-indigo-500 text-white px-8 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
               Submit Your Photos
             </button>
