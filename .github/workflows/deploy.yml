@@ -32,7 +32,7 @@ jobs:
           
       - name: Install dependencies
         working-directory: owls-website
-        run: npm ci
+        run: npm install && npm ci
         
       - name: Run linting
         working-directory: owls-website
